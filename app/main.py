@@ -1,5 +1,5 @@
-from random import *
-a=[
+from random import randint
+a = [
     'Bulbasaur',
     'Ivysaur',
     'Venusaur',
@@ -895,8 +895,7 @@ a=[
     'Zarude',
     'Regieleki',
     'Regidrago',
-    'Calyrex']
+    'Calyrex'
+]
 while True:
-    for i in range (randint(1,10000)):
-        i=randint(1,len(a)-1)
-    input(a[i])
+    input(a[randint(0, randint(0, (len(a) - 1) * 10)) % len(a)])
